@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: "project"
+
+server:
+  address: 0.0.0.0
+  port: 8080
+
+jwt:
+  secret: "PA6G/6ryBRKWOMUJZ8X7zD/d87LpkRg5803bJkdl8HE="
+  expiry-millis: 7200000
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
