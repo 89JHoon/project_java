@@ -33,4 +33,8 @@ public class UserRepository {
     public boolean existByUsername(String username) {
         return userStoreByUsername.containsKey(username);
     }
+
+    public Optional<User> findById(Long id) {
+        return Optional.ofNullable(userStoreById.get(id));
+    }
 }

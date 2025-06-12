@@ -25,4 +25,9 @@ public class User {
         this.roles = new ArrayList<>();
         this.roles.add(Role.USER);
     }
+
+    public void updateRoles(Role role) {
+        this.roles.clear();
+        this.roles.add(role);
+    }
 }

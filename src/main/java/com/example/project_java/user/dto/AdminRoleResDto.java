@@ -1,29 +1,28 @@
 package com.example.project_java.user.dto;
 
 import com.example.project_java.user.entity.User;
-import com.example.project_java.user.enums.Role;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 
 import java.util.List;
 
 @Getter
-public class SignUpResDto {
-    private final String userName;
+public class AdminRoleResDto {
+
+    private final String username;
     private final String nickname;
     private final List<RoleDto> roles;
 
-    public SignUpResDto(String userName, String nickname, List<RoleDto> roles) {
-        this.userName = userName;
+    public AdminRoleResDto(String username, String nickname, List<RoleDto> roles) {
+        this.username = username;
         this.nickname = nickname;
         this.roles = roles;
     }
 
-    public static SignUpResDto toDto(User user) {
+    public static AdminRoleResDto toDto(User user) {
         List<RoleDto> roles = user.getRoles()
                 .stream()
                 .map(RoleDto::new)
                 .toList();
-        return new SignUpResDto(user.getUserName(), user.getNickname(), roles);
+        return new AdminRoleResDto(user.getUserName(), user.getNickname(), roles);
     }
 }
