@@ -4,7 +4,7 @@
 Spring Boot, JWT, JUnit, Swagger(OpenAPI), AWS EC2 배포까지 모두 경험할 수 있습니다.
 
 ## 프로젝트 소개
-기술스택: Java 17+, Spring Boot 3.x, Spring Security, JWT, JUnit, Swagger (springdoc-openapi)
+기술스택: Java 24, Spring Boot 3.x, Spring Security, JWT, JUnit, Swagger (springdoc-openapi)
 
 ## 주요 목적:
 회원가입/로그인/관리자 권한 부여 API 구현
